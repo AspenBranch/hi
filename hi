@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href='https://fonts.googleapis.com/css?family=Orbitron:500|Dosis:600|Candal|Sigmar+One|Bangers|Luckiest+Guy|Marck+Script|Audiowide|Just+Another+Hand|Bubblegum+Sans|Julius+Sans+One|Cherry+Cream+Soda|Michroma|Walter+Turncoat|Aldrich|Aclonica|Fredericka+the+Great|Black+Ops+One|Ceviche+One|Frijole|Freckle+Face|Unica+One|Knewave|Caesar+Dressing|Graduate|Megrim|Slackey|IM+Fell+English|Finger+Paint|Iceland|Carter+One|Just+Me+Again+Down+Here|Lemon|Lily+Script+One|Crushed|Seaweed+Script|Grand+Hotel|Creepster|Griffy|Rye|Sunshiney|Atomic+Age|Montserrat+Subrayada|Ranchers|New+Rocker|Akronim|Geostar+Fill|Faster+One|Eater|Underdog|Arbutus|Stalinist+One|Hanalei|Flavors|Fruktur|Ravi+Prakash|Cabin+Sketch:700' rel='stylesheet' type='text/css'>
+        <title>Cool Fonts</title>
+        <style>
+            h1{
+                font-family: sigmar one;
+                font-size: 50px;
+                text-align: center;
+            }
+            #fonts p{
+                font-size: 36px;
+                line-height: 10px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1><u>Cool Fonts</u></h1>
+        <div id = "fonts">
+            
+        </div>
+        <script>
+            var fonts = ["Orbitron","Dosis","Candal","Sigmar One","Bangers","Luckiest Guy","Marck Script","Audiowide","Just Another Hand","Bubblegum Sans","Julius Sans One","Cherry Cream Soda","Michroma","Walter Turncoat","Aldrich","Aclonica","Fredericka The Great","Black Ops One","Ceviche One","Frijole","Freckle Face","Unica One","Knewave","Caesar Dressing","Graduate","Megrim","Slackey","IM Fell English","Finger Paint","Iceland","Carter One","Just Me Again Down Here","Lemon","Lily Script One","Crushed","Seaweed Script","Grand Hotel","Creepster","Griffy","Rye","Sunshiney","Atomic Age","Montserrat Subrayada","Ranchers","New Racker","Akronim","Geostar Fill","Faster One","Eater","Underdog","Arbutus","Stalinist One","Hanalei","Flavors","Fruktur","Ravi Prakash","Cabin Sketch"];
+            var fontEl = document.getElementById("fonts");
+            for(var i = 0;i < fonts.length;i += 1){
+                var newFont = document.createElement("p");
+                newFont.style.fontFamily = fonts[i];
+                newFont.textContent = fonts[i];
+                fontEl.appendChild(newFont);
+            }
+        </script>
+    </body>
+</html>
